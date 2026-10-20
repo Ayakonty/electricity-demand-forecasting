@@ -1,0 +1,5 @@
+model,rmse,mape_percent
+XGBoost,7195.67,2.31
+LSTM,9721.07,3.54
+Naive-24,13459.18,3.84
+Naive-168,19947.32,5.24

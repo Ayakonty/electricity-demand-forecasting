@@ -1,0 +1,9 @@
+# Intended for use with a modern Google Colab Python 3 runtime.
+# Exact versions in the original executed Colab environment were not recorded.
+pandas
+numpy
+scikit-learn
+xgboost
+tensorflow
+matplotlib
+nbformat

@@ -1,0 +1,11 @@
+# Large downloaded raw data and archives
+LD2011_2014.txt
+*.zip
+data/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+*.key
+*.pem
+.DS_Store
