@@ -77,7 +77,7 @@ requirements.txt                           # Dependency families
 1. Open `uci_forecasting_as_executed.ipynb` in [Google Colab](https://colab.research.google.com/).
 2. Use **Runtime → Run all**. The first cell downloads approximately 249 MB of source data from the UCI archive and unzips it; enough disk space and memory are required.
 3. If Google Colab does not already provide dependencies, install those listed in `requirements.txt`.
-4. Compare new metrics with `results/`. **Exact LSTM results can vary** with library/hardware versions and nondeterministic computations.
+4. Compare new metrics with `final_test_2014.csv` and `validation_2013.csv`. **Exact LSTM results can vary** with library/hardware versions and nondeterministic computations.
 
 The notebook is preserved **as executed**, including training logs and cell outputs. The source file has not been edited to alter model scores. A notebook with stored outputs is evidence of a recorded execution, **not a substitute for independent reproducibility verification**.
 
