@@ -42,9 +42,9 @@ These numbers are **taken from the saved outputs of the provided executed Colab 
 | Naive-24 | 13,555.31 | 3.68 |
 | Naive-168 | 20,769.35 | 5.13 |
 
-![RMSE comparison](figures/final_test_rmse.png)
+![RMSE comparison](final_test_rmse.png)
 
-![MAPE comparison](figures/final_test_mape.png)
+![MAPE comparison](final_test_mape.png)
 
 XGBoost's test RMSE is approximately **16.6% lower** than the LSTM result in this run. This does **not** establish that XGBoost is universally superior. One LSTM seed/run is insufficient to assess uncertainty or robustness.
 
@@ -62,11 +62,11 @@ The LSTM validation run continued to 50 epochs; its best checkpoint was at epoch
 ## Files
 
 ```text
-notebooks/uci_forecasting_as_executed.ipynb   # Original exported Colab file, unchanged
-results/final_test_2014.csv                # Extracted saved-output scores
-results/validation_2013.csv                # Extracted saved-output scores
-figures/final_test_rmse.png                # Visualization of saved-output scores
-figures/final_test_mape.png                # Visualization of saved-output scores
+uci_forecasting_as_executed.ipynb   # Original exported Colab file, unchanged
+final_test_2014.csv                # Extracted saved-output scores
+validation_2013.csv                # Extracted saved-output scores
+final_test_rmse.png                # Visualization of saved-output scores
+final_test_mape.png                # Visualization of saved-output scores
 DATA_PROVENANCE.md                         # Source and publication distinction
 requirements.txt                           # Dependency families
 .gitignore                                 # Files excluded from Git
@@ -74,7 +74,7 @@ requirements.txt                           # Dependency families
 
 ## Running this notebook in Google Colab
 
-1. Open `notebooks/uci_forecasting_as_executed.ipynb` in [Google Colab](https://colab.research.google.com/).
+1. Open `uci_forecasting_as_executed.ipynb` in [Google Colab](https://colab.research.google.com/).
 2. Use **Runtime → Run all**. The first cell downloads approximately 249 MB of source data from the UCI archive and unzips it; enough disk space and memory are required.
 3. If Google Colab does not already provide dependencies, install those listed in `requirements.txt`.
 4. Compare new metrics with `results/`. **Exact LSTM results can vary** with library/hardware versions and nondeterministic computations.
