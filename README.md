@@ -4,7 +4,7 @@
 
 An executed Google Colab experiment comparing **XGBoost**, **LSTM**, and **seasonal naive baselines** on electricity consumption data from the [UCI Electricity Load Diagrams 2011–2014](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014) dataset.
 
-> **Scope:** This repository documents a **separate, subsequent UCI experiment**. It is **not** the original training code for, or an exact numerical reproduction of, the 2026 journal article *Data Science-Based Modeling for Electricity Consumption Forecasting*. The paper's reported model scores differ from the results below.
+> **Scope:** This repository documents a standalone research experiment using the UCI Electricity Load Diagrams 2011–2014 dataset. The reported results apply to the data processing, training procedures, and evaluation settings implemented in the accompanying notebook. They should not be interpreted as results from any other experiment.
 
 ## Dataset and research question
 
@@ -87,4 +87,4 @@ The notebook is preserved **as executed**, including training logs and cell outp
 - Model selection used 2013 validation, rather than the 2014 test year.
 - The code predicts the aggregate load, whose numeric scale differs strongly from a per-consumer target.
 - The notebook contains one final LSTM run; no multi-seed study, confidence interval, or forward-deployment test was conducted.
-- See `DATA_PROVENANCE.md` for how this work differs from a related publication.
+- See `DATA_PROVENANCE.md` for dataset and experiment provenance.
